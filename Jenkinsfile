@@ -4,9 +4,18 @@ pipeline {
 
 	stages {
 
-		stage('Test') {
 
-			agent {dockerfile true}
+			stage('Build docker image') {
+				
+				steps {
+					sh 'docker build -t robotimage'
+				}
+
+			}
+			
+
+			stage('Test') {
+
 
 				steps {
 
