@@ -1,6 +1,6 @@
 #Base image
 FROM ubuntu
-LABEL version="latest" maintainer="Raj Tech-Trainer <techtrainerraj@gmail.com>"
+LABEL version="latest" maintainer="Prasad Vemuri <vemuriprasad@hotmail.com>"
 
 #update the image
 RUN apt-get update
