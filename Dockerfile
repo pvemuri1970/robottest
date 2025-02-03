@@ -18,7 +18,16 @@ RUN apt-get install -y xvfb
 RUN apt-get install -y zip 
 RUN apt-get install -y wget 
 RUN apt-get install ca-certificates 
-RUN apt-get install -y libnss3-dev libasound2 libxss1 libappindicator3-1 libindicator7 gconf-service libgconf-2-4 libpango1.0-0 xdg-utils fonts-liberation
+RUN sudo apt-get install -y \
+  libnss3-dev \
+  libasound2 \
+  libxss1 \
+  libappindicator3-1 \
+  libindicator7 \
+  gconf2 \
+  libpango-1.0-0 \
+  xdg-utils \
+  fonts-liberation
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
 RUN dpkg -i google-chrome*.deb 
 RUN rm google-chrome*.deb
