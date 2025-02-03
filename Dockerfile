@@ -6,7 +6,7 @@ LABEL version="latest" maintainer="Prasad Vemuri <vemuriprasad@hotmail.com>"
 RUN apt-get update
 
 #install python
-RUN apt install -y python3.7
+RUN apt install -y python3
 RUN apt install -y python3-pip
 
 #install robotframework and seleniumlibrary
