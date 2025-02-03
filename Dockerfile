@@ -8,10 +8,10 @@ RUN apt-get update
 #install python
 RUN apt install -y python3
 RUN apt install -y python3-pip
-
+RUN apt install -y pipx
 #install robotframework and seleniumlibrary
-RUN apt install python3-robotframework
-RUN apt install python3-robotframework-seleniumlibrary
+RUN pipx install robotframework
+RUN pipx install robotframework-seleniumlibrary
 
 #The followig are needed for Chrome and Chromedriver installation
 RUN apt-get install -y xvfb 
